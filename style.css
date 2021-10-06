@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  /* Primary */
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  min-height: 100vh;
+  font-size: 15px;
+}
+
+h1 {
+  font-family: "Big Shoulders", sans-serif;
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparent-white);
+  line-height: 1.3rem;
+  margin-bottom: 4rem;
+}
+
+.btn {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--very-light-gray);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+}
+
+.btn:active {
+  background-color: transparent;
+  color: var(--transparent-white);
+  border: 2px solid var(--very-light-gray);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.container .card {
+  width: 250px;
+  padding: 2.4rem;
+}
+
+.container .card img {
+  margin-bottom: 1.2rem;
+}
+
+.container .card a {
+  text-transform: capitalize;
+}
+
+.card1 {
+  background-color: var(--Bright-orange);
+  border-radius: 4px 0 0 4px;
+}
+
+.card1 a {
+  color: orange;
+}
+
+.card2 {
+  background-color: var(--Dark-cyan);
+}
+
+.card2 a {
+  color: var(--Dark-cyan);
+}
+
+.card3 {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0 4px 4px 0;
+}
+
+.card3 a {
+  color: var(--Very-dark-cyan);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  .container .card {
+    justify-content: center;
+    width: 80%;
+  }
+  .card1 {
+    border-radius: 4px 4px 0 0;
+  }
+  .card3 {
+    border-radius: 0 0 4px 4px;
+  }
+}
