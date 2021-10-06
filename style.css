@@ -56,7 +56,6 @@ p {
 }
 
 .attribution {
-  
   font-size: 1rem;
   text-align: center;
 }
@@ -74,8 +73,9 @@ p {
 }
 
 .container .card {
-  width: 250px;
-  padding: 2.4rem;
+  width: 300px;
+  height: 400px;
+  padding: 2.5rem;
 }
 
 .container .card img {
